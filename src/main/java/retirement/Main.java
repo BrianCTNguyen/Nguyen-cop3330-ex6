@@ -37,6 +37,17 @@ public class Main {
 
         int currentYear = Calendar.getInstance().get(Calendar.YEAR);
 
-        
+        System.out.print("What is your current age? ");
+        int age = in.nextInt();
+
+        System.out.print("At what age would you like to retire? ");
+        int retireAge = in.nextInt();
+
+        int yearsLeft = retireAge - age;
+
+        int retireYear = currentYear + yearsLeft;
+
+        System.out.println("You have " + yearsLeft + " years left until you can retire.");
+        System.out.println("It's " + currentYear + ", so you can retire in " + retireYear + ".");
     }
 }
